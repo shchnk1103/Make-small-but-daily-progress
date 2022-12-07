@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "husky": "^4.3.8"
+  },
+  "dependencies": {
+    "@mikro-orm/cli": "^5.5.3"
+  }
+}
