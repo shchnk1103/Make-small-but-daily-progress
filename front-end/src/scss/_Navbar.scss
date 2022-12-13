@@ -1,0 +1,56 @@
+/****** Navbar CSS ******/
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: black !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 999;
+
+  .navbar-brand {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 25px;
+    padding-left: 10px;
+  }
+
+  .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+
+    &.active {
+      color: #fff3cd;
+    }
+  }
+
+  .login-btn {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+
+    &:hover {
+      color: black;
+      background: ghostwhite;
+      box-shadow: 0 3px 10px lightblue;
+    }
+  }
+
+  .signup-btn {
+    font-weight: 700;
+    background: black;
+    border: 1px solid white;
+
+    &:hover {
+      box-shadow: 0 3px 10px lightblue;
+    }
+  }
+
+  .login-signup-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

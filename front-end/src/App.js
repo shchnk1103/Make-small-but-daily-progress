@@ -1,11 +1,11 @@
 import './scss/index.css';
-import {Navbar} from "./component/Navbar";
 import {FetchData} from "./component/FetchData";
+import {Home} from "./component/Home";
 
 function App() {
     return (
         <div>
-            <Navbar/>
+            <Home/>
             <FetchData/>
         </div>
     );

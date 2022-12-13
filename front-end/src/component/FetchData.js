@@ -36,7 +36,7 @@ export const FetchData = () => {
     })
 
     return (
-        <div className="container-fluid text-center table-container">
+        <div className="container-fluid text-center table-container fetchData-page" id="fetchData">
             <table className="table table-striped table-hover">
                 <thead>
                 <tr>
@@ -51,7 +51,7 @@ export const FetchData = () => {
                 </tbody>
             </table>
 
-            <button type="button" className="btn btn-dark" onClick={handleClick}>
+            <button type="button" className="btn btn-light" onClick={handleClick}>
                 刷新{count}次
             </button>
         </div>
