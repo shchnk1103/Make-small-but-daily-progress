@@ -23,7 +23,6 @@ export const FetchData = () => {
     }
 
     const userList = Object.values(users).map((user, index) => {
-        console.log(user, index)
         return (
             <tr key={index}>
                 <th scope="col">{user.pk}</th>
