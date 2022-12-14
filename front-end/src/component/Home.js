@@ -36,9 +36,10 @@ export const Home = () => {
     let ticker = setInterval(() => {
       tick()
     }, delta)
-    
+
     return () => clearInterval(ticker)
-  }, [delta, text, tick])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [text])
 
   return (
     <div className="container-fluid text-center home-page" id="home">

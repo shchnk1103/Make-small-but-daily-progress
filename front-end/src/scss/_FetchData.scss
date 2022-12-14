@@ -4,8 +4,76 @@
   width: 100%;
   height: 100vh;
   background: black;
+  position: relative;
+  display: flex;
+  justify-content: center;
 
   th {
     color: white;
+  }
+
+  .data-card {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px gray;
+
+    .data-table {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 80%;
+
+      .table-title {
+        background: #6c6b6b;
+        border-radius: 10px;
+        height: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        position: relative;
+        box-shadow: 2px 5px 10px whitesmoke;
+
+        font-size: 1.2em;
+        font-weight: 700;
+      }
+
+      th {
+        color: #fff3cd;
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      tbody {
+        background: whitesmoke;
+        border-radius: 10px;
+        height: 80%;
+        margin-bottom: 20px;
+        box-shadow: 2px 5px 10px whitesmoke;
+
+        th {
+          color: black;
+        }
+
+        .table-title {
+          margin: 0;
+          background: transparent;
+          box-shadow: none;
+          font-size: 1em;
+        }
+      }
+    }
   }
 }

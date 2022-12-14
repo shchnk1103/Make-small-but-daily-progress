@@ -31,7 +31,7 @@ export const Navbar = () => {
                                 href="#fetchData"
                                 className={activeLink === "fetchData" ? "nav-link active" : "nav-link"}
                                 onClick={() => updateActiveLink("fetchData")}
-                            >Link</a>
+                            >UserList</a>
                         </li>
                     </ul>
 
