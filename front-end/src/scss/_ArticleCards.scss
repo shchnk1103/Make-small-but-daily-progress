@@ -1,0 +1,87 @@
+.article-cards-page {
+  width: 100%;
+  height: 600px;
+  background: black;
+  color: whitesmoke;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2, 200px);
+  grid-gap: 20px;
+  justify-content: center;
+  padding-top: 120px;
+
+  .article-card {
+    background: gray;
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+    z-index: 1;
+
+    .card-title {
+      font-size: 2em;
+      font-weight: 900;
+      text-shadow: 1px 1px 2px pink;
+      margin-bottom: 15px;
+      text-align: left;
+      padding-left: 6px;
+    }
+
+    .card-author {
+      font-size: 12px;
+      font-weight: lighter;
+      color: whitesmoke;
+      text-shadow: 1px 1px 2px pink;
+    }
+
+    .card-created_time {
+      padding-top: 20px;
+      font-weight: normal;
+      text-shadow: 1px 1px 2px pink;
+    }
+
+    .card-content {
+      position: absolute;
+      text-align: center;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: 0.5s ease-in-out;
+      opacity: 0;
+      width: 100%;
+    }
+
+    &:before {
+      background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+      opacity: 0.85;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      z-index: -1;
+      transition: 0.3s ease-in-out;
+    }
+
+    &:hover {
+      .card-content {
+        top: 50%;
+        opacity: 1;
+        z-index: 2;
+      }
+
+      &:before {
+        height: 100%;
+        z-index: 1;
+      }
+    }
+  }
+}

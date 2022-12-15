@@ -28,6 +28,13 @@ export const Navbar = () => {
                         </li>
                         <li className="nav-item">
                             <a
+                                href="#articleCards"
+                                className={activeLink === "articleCards" ? "nav-link active" : "nav-link"}
+                                onClick={() => updateActiveLink("articleCards")}
+                            >ArticleCards</a>
+                        </li>
+                        <li className="nav-item">
+                            <a
                                 href="#fetchData"
                                 className={activeLink === "fetchData" ? "nav-link active" : "nav-link"}
                                 onClick={() => updateActiveLink("fetchData")}
